@@ -1,0 +1,11 @@
+node{
+    stage('stage') {
+     git 'https://github.com/vtvc/mavenUnitTest.git'
+}
+    stage('stage2') {
+     sh label: '', script: 'mvn install'
+}
+    stage('stage3') {
+     sh label: '', script: 'echo "hi this is pipe line script"'
+}
+}
