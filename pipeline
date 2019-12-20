@@ -6,6 +6,6 @@ node{
      sh label: '', script: 'mvn install'
 }
     stage('stage3') {
-     sh label: '', script: 'echo "hi this is pipe line script"'
+     sh label: '', script: 'echo "hi this will be the pipe line script"'
 }
 }
